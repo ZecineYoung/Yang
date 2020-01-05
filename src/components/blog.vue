@@ -3,6 +3,7 @@
     <div>
       <h1>标题：  {{blog.title}}</h1>
       <p style="opacity: 0.5;">发布于：{{blog.created_at}} </p>
+      <my-logo></my-logo>
       <div v-html='blog.body'>
         {{blog}}
       </div>
@@ -11,6 +12,7 @@
 </template>
 
 <script>
+  import MyLogo from '@/components/logo.vue'
   export default{
     data (){
       return{
@@ -24,6 +26,9 @@
         console.error(response)
       }
       );
+    },
+    components:{
+      MyLogo
     }
   }
 </script>

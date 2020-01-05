@@ -5,6 +5,7 @@ import Hello from '@/components/Hello'
 import BlogList from '@/components/BlogList'
 import Blog from '@/components/Blog'
 import TwoWayBuilding from '@/components/TwoWayBuilding'
+import form_input from '@/components/form_input'
 //
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path:'/TwoWayBuilding',
       name:'TwoWayBuilding',
       component:TwoWayBuilding
+    },
+    {
+      path:'/form_input',
+      name:'form_input',
+      component:form_input
     }
   ]
 })
